@@ -7,8 +7,8 @@ class BlitzCli < Formula
   # .github/workflows/homebrew.yml. The placeholder sha256 below is replaced with
   # the real PyPI sdist digest on the first release; until then this formula will
   # not install.
-  url "https://files.pythonhosted.org/packages/83/23/ba9aa4c06b20b537c06cada7b5e7a873950657efd37fbe1212bbbda10d48/blitz_cli-0.4.0.tar.gz"
-  sha256 "17ac9f837554509757025bab11415783de4b562bd98d4b0412073b6813ed1ba5"
+  url "https://files.pythonhosted.org/packages/42/a9/6e25131d61a6327ec8052f7709407c541e9f9adb802729189c6375c8301a/blitz_cli-0.5.0.tar.gz"
+  sha256 "c7b2c61ac6796055be7548d0d45e9b493cce9db11f4e242f88b1ba87a291340a"
   license "MIT"
 
   # blitz-cli is stdlib-only (no PyPI dependencies), so there are no resource
