@@ -19,7 +19,7 @@ brew install blitz-cli
 
 | Formula | Description |
 |---------|-------------|
-| `blitz-cli` | Developer CLI for Blitz: onboard a repo, scan LLM calls, scaffold a QLoRA trainer. |
+| `blitz-cli` | Developer CLI for the Blitz locker-room: install spec-driven playbooks into your repos, scaffold and run a codebase/huddle ontology node (served to agents over MCP + a browser graph view), and replay coding-agent sessions. |
 
 ## Maintenance
 
