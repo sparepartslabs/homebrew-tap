@@ -53,7 +53,7 @@ fi
 TASKS_TEMPLATE=$(resolve_template "tasks-template" "$REPO_ROOT") || true
 if [[ -z "$TASKS_TEMPLATE" ]] || [[ ! -f "$TASKS_TEMPLATE" ]]; then
     echo "ERROR: Could not resolve required tasks-template from the template override stack for $REPO_ROOT" >&2
-    echo "Template 'tasks-template' was not found in any supported location (overrides, presets, extensions, or shared core). Add an override at .blitz/templates/overrides/tasks-template.md, or run 'blitz playbooks init' / reinstall shared infra to restore the core .blitz/templates/tasks-template.md template." >&2
+    echo "Template 'tasks-template' was not found in any supported location (overrides, presets, extensions, or shared core). Add an override at .blitz/templates/overrides/tasks-template.md, or run 'blitz init' / reinstall shared infra to restore the core .blitz/templates/tasks-template.md template." >&2
     exit 1
 fi
 
