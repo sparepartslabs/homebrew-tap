@@ -7,18 +7,13 @@ class BlitzCli < Formula
   # .github/workflows/homebrew.yml. The placeholder sha256 below is replaced with
   # the real PyPI sdist digest on the first release; until then this formula will
   # not install.
-  url "https://files.pythonhosted.org/packages/c2/9b/3c4abc91034387f74e518387698f6589dd1f2978ebcfa6e6639805284720/blitz_cli-0.8.0.tar.gz"
-  sha256 "f6e6871f751ba5703b6f17fe646ab0bf6f6377bde79f995d2db8b0fd214e5aa2"
+  url "https://files.pythonhosted.org/packages/49/9c/aa120b981d477ac72a4ad4a1ca1e9f0a104bf9c9c10a626026a82293ee24/blitz_cli-0.9.0.tar.gz"
+  sha256 "c3935f2a5859a5af55010e68efe1631e381322cbf1cf6f99200b1ab90463c4cb"
   license "MIT"
 
   # blitz-cli depends on rich (with its own deps), vendored as resource
   # blocks below; it installs into its own virtualenv on Homebrew's Python.
   depends_on "python@3.12"
-
-  resource "rich" do
-    url "https://files.pythonhosted.org/packages/c0/8f/0722ca900cc807c13a6a0c696dacf35430f72e0ec571c4275d2371fca3e9/rich-15.0.0.tar.gz"
-    sha256 "edd07a4824c6b40189fb7ac9bc4c52536e9780fbbfbddf6f1e2502c31b068c36"
-  end
 
   resource "markdown-it-py" do
     url "https://files.pythonhosted.org/packages/06/ff/7841249c247aa650a76b9ee4bbaeae59370dc8bfd2f6c01f3630c35eb134/markdown_it_py-4.2.0.tar.gz"
@@ -33,6 +28,11 @@ class BlitzCli < Formula
   resource "Pygments" do
     url "https://files.pythonhosted.org/packages/c3/b2/bc9c9196916376152d655522fdcebac55e66de6603a76a02bca1b6414f6c/pygments-2.20.0.tar.gz"
     sha256 "6757cd03768053ff99f3039c1a36d6c0aa0b263438fcab17520b30a303a82b5f"
+  end
+
+  resource "rich" do
+    url "https://files.pythonhosted.org/packages/c0/8f/0722ca900cc807c13a6a0c696dacf35430f72e0ec571c4275d2371fca3e9/rich-15.0.0.tar.gz"
+    sha256 "edd07a4824c6b40189fb7ac9bc4c52536e9780fbbfbddf6f1e2502c31b068c36"
   end
 
   def install
