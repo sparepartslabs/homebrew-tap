@@ -11,10 +11,14 @@
 **/.blitz/traces.db*
 
 # Regenerable `blitz init` output: scripts/ and templates/ are refreshed from the
-# package on --force, and the rendered commands change whenever a release moves a
-# template, so a clone reproduces them exactly by running init. memory/playbook.md
-# is deliberately NOT here: it is seeded once and never overwritten, so it stays
-# tracked.
+# package on --force, so a clone reproduces them by running init.
+#
+# The rendered agent commands (.claude/commands/) are deliberately NOT here. They
+# are regenerable too, but the agent directory is what `blitz init` detects to
+# decide which agent to render for, so a clone without it gets "no agent tool
+# detected; skipping" and no playbook commands at all.
+#
+# .blitz/memory/playbook.md is also not here: it is seeded once and never
+# overwritten, so it stays tracked.
 /.blitz/scripts/
 /.blitz/templates/
-/.claude/commands/
