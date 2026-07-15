@@ -1,0 +1,5 @@
+
+# Blitz working area: memory/, scripts/ and templates/ are governed content and
+# stay tracked. These two are per-run and per-developer state.
+/.blitz/execute/
+/.blitz/feature.json
