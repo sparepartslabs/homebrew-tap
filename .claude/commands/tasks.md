@@ -194,7 +194,7 @@ files that are exactly specified and unforgiving of drift.
 ### Executor Annotation ([L] marker)
 
 Task lists can be executed by a mix of a frontier agent and the user's own local model (via
-`blitz implement --local-only`). Whether a local model is available — and what it can handle —
+`blitz model execute --local-only`). Whether a local model is available — and what it can handle —
 is configured, not guessed:
 
 1. Read `.blitz/config.json` in the repo root. If it has no `local_model` key, read
@@ -228,7 +228,7 @@ is configured, not guessed:
 
 4. Place `[L]` after `[P]` and before the `[Story]` label:
    `- [ ] T003 [P] [L] [US1] CREATE ...`
-5. The marker is load-bearing and machine-parsed: `blitz implement --local-only` executes
+5. The marker is load-bearing and machine-parsed: `blitz model execute --local-only` executes
    consecutive `[L]` tasks and stops at the first task without the marker, handing control back
    to the orchestrating agent. Keep runs of local-eligible tasks contiguous where dependencies
    allow — interleaving one frontier task between local ones forces a round-trip per task.

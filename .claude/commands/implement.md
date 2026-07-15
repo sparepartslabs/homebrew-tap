@@ -147,15 +147,15 @@ You **MUST** consider the user input before proceeding (if not empty).
      that is the point of the marker: the user is paying for frontier tokens only where needed.
    - Work through the task list in ID order with this loop:
      1. Find the next unchecked, non-"optional manual" task.
-     2. If it is marked `[L]`: run `blitz implement <path-to-tasks.md> --local-only --start-at <TaskID>`
+     2. If it is marked `[L]`: run `blitz model execute <path-to-tasks.md> --local-only --start-at <TaskID>`
         and wait. The command executes the contiguous run of `[L]` tasks, checks them off in
         tasks.md, and exits 0 when it reaches a task without the marker (or finishes).
         Exit 1 means a local task failed after retries — take that task over yourself
-        (its per-attempt replies are in `.blitz/implement/runs/<stamp>/`), mark it off,
+        (its per-attempt replies are in `.blitz/execute/runs/<stamp>/`), mark it off,
         then resume the loop.
      3. If it is NOT marked `[L]`: execute it yourself as described below, mark it off,
         and resume the loop.
-     4. After every `blitz implement` invocation, RE-READ tasks.md — the file changed on disk.
+     4. After every `blitz model execute` invocation, RE-READ tasks.md — the file changed on disk.
    - Never execute an `[L]` task yourself while the CLI is available unless it has already
      failed a local run.
 
