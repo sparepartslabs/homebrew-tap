@@ -3,3 +3,9 @@
 # stay tracked. These two are per-run and per-developer state.
 /.blitz/execute/
 /.blitz/feature.json
+
+# blitz-sdk local trace capture (see blitz.toml's [capture] local = true).
+# Unanchored: the sdk writes its store relative to whichever project dir holds
+# the blitz.toml, which is not always the repo root. The `*` covers the SQLite
+# -wal/-shm sidecars.
+**/.blitz/traces.db*
