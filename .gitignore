@@ -9,3 +9,12 @@
 # the blitz.toml, which is not always the repo root. The `*` covers the SQLite
 # -wal/-shm sidecars.
 **/.blitz/traces.db*
+
+# Regenerable `blitz init` output: scripts/ and templates/ are refreshed from the
+# package on --force, and the rendered commands change whenever a release moves a
+# template, so a clone reproduces them exactly by running init. memory/playbook.md
+# is deliberately NOT here: it is seeded once and never overwritten, so it stays
+# tracked.
+/.blitz/scripts/
+/.blitz/templates/
+/.claude/commands/
