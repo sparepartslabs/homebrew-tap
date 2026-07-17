@@ -1,0 +1,8 @@
+# blitz secret-scan allowlist. Entries match a repo-relative `path` exactly or
+# a glob `pattern` (fnmatch; `*` spans `/`).
+[secrets]
+allowlist = [
+  # Homebrew formulae carry sha256 release-tarball digests (high-entropy) and
+  # occasionally Luhn-shaped digit runs. Not secrets.
+  { pattern = "Formula/*.rb" },
+]
