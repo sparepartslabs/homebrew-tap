@@ -6,8 +6,8 @@ class SparepartsCli < Formula
   # url + sha256 are updated automatically on each release by the spareparts-cli
   # repo's .github/workflows/homebrew.yml. Until the first release lands on PyPI
   # this formula cannot install; the placeholders below are what it replaces.
-  url "https://files.pythonhosted.org/packages/f2/bc/1e0a6f8d229b853f7969972489566b871c1f551720323b6eada1a3bc63c4/spareparts_cli-0.1.0.tar.gz"
-  sha256 "932db60a1fbf65b5274adc6ad303dd8a512c0dbd5ff77a405ce164d7a72461cd"
+  url "https://files.pythonhosted.org/packages/75/22/00bce1983fed99cbacc00963fd0975fd572f3318d19922835e79789598e7/spareparts_cli-0.2.0.tar.gz"
+  sha256 "9a90ce3ca10c624be305ecf25c34600d36d6c5689fc92ec80b1f96132572fefa"
 
   # All three vendor SDKs are vendored as resource blocks below, refreshed by
   # that same workflow. A pip install brings none of them, because none of the
@@ -21,8 +21,8 @@ class SparepartsCli < Formula
   end
 
   resource "anthropic" do
-    url "https://files.pythonhosted.org/packages/d7/10/4ca013cb166f226bd89e0aeb0fcaff94f45ddf716d4925ce89475d3c587b/anthropic-0.120.2.tar.gz"
-    sha256 "9722efc10c27a30a69f5338ddacdb35bc6a64297a4e4ba729bf83af873d5fb3a"
+    url "https://files.pythonhosted.org/packages/0f/ca/3cb2c20ee729736fbd4546d5d8b67e818288529fe70cb7a80dbf80aef70b/anthropic-0.121.0.tar.gz"
+    sha256 "e79d6e08ab3376602fc9a70d4d5ea3540817c76cf7e16658bed790834e1833d6"
   end
 
   resource "anyio" do
