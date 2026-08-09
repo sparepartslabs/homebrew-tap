@@ -22,3 +22,10 @@
 # overwritten, so it stays tracked.
 /.blitz/scripts/
 /.blitz/templates/
+
+# Spare Parts engineering context: regenerable output and per-run state.
+/.sp/execute/
+/.sp/feature.json
+**/.sp/traces.db*
+/.sp/scripts/
+/.sp/templates/
