@@ -1,11 +1,12 @@
 ---
-description: Identify underspecified areas in the current feature spec by asking up to 5 highly targeted clarification questions and encoding answers back into the spec.
+name: clarify
+description: "Identify underspecified areas in the current feature spec by asking up to 5 highly targeted clarification questions and encoding answers back into the spec."
 ---
 
 ## User Input
 
 ```text
-$ARGUMENTS
+the user request that invoked this skill
 ```
 
 You **MUST** consider the user input before proceeding (if not empty).
@@ -222,7 +223,7 @@ Behavior rules:
 - If no questions asked due to full coverage, output a compact coverage summary (all categories Clear) then suggest advancing.
 - If quota reached with unresolved high-impact categories remaining, explicitly flag them under Deferred with rationale.
 
-Context for prioritization: $ARGUMENTS
+Context for prioritization: the user request that invoked this skill
 
 ## Mandatory Post-Execution Hooks
 

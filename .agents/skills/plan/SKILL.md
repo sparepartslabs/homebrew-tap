@@ -1,11 +1,12 @@
 ---
-description: Execute the implementation planning workflow using the plan template to generate design artifacts.
+name: plan
+description: "Execute the implementation planning workflow using the plan template to generate design artifacts."
 ---
 
 ## User Input
 
 ```text
-$ARGUMENTS
+the user request that invoked this skill
 ```
 
 You **MUST** consider the user input before proceeding (if not empty).

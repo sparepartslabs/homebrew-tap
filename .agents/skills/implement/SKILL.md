@@ -1,11 +1,12 @@
 ---
-description: Execute the implementation plan by processing and executing all tasks defined in tasks.md
+name: implement
+description: "Execute the implementation plan by processing and executing all tasks defined in tasks.md"
 ---
 
 ## User Input
 
 ```text
-$ARGUMENTS
+the user request that invoked this skill
 ```
 
 You **MUST** consider the user input before proceeding (if not empty).

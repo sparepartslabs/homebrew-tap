@@ -1,11 +1,12 @@
 ---
-description: Generate an actionable, dependency-ordered tasks.md for the feature based on available design artifacts.
+name: tasks
+description: "Generate an actionable, dependency-ordered tasks.md for the feature based on available design artifacts."
 ---
 
 ## User Input
 
 ```text
-$ARGUMENTS
+the user request that invoked this skill
 ```
 
 You **MUST** consider the user input before proceeding (if not empty).
@@ -123,7 +124,7 @@ Output path to generated tasks.md and summary:
 - Suggested MVP scope (typically just User Story 1)
 - Format validation: Confirm ALL tasks follow the checklist format (checkbox, ID, labels, file paths)
 
-Context for task generation: $ARGUMENTS
+Context for task generation: the user request that invoked this skill
 
 The tasks.md should be immediately executable - each task must be specific enough that an LLM can complete it without additional context.
 

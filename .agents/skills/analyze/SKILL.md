@@ -1,11 +1,12 @@
 ---
-description: Perform a non-destructive cross-artifact consistency and quality analysis across spec.md, plan.md, and tasks.md after task generation.
+name: analyze
+description: "Perform a non-destructive cross-artifact consistency and quality analysis across spec.md, plan.md, and tasks.md after task generation."
 ---
 
 ## User Input
 
 ```text
-$ARGUMENTS
+the user request that invoked this skill
 ```
 
 You **MUST** consider the user input before proceeding (if not empty).
@@ -248,4 +249,4 @@ After reporting, check if `.sp/extensions.yml` exists in the project root.
 
 ## Context
 
-$ARGUMENTS
+the user request that invoked this skill
