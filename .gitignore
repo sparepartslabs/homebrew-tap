@@ -29,3 +29,6 @@
 **/.sp/traces.db*
 /.sp/scripts/
 /.sp/templates/
+
+# Local feature specifications.
+specs/
