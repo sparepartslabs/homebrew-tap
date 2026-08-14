@@ -6,8 +6,8 @@ class SparepartsCli < Formula
   # url + sha256 are updated automatically on each release by the spareparts-cli
   # repo's .github/workflows/homebrew.yml. Until the first release lands on PyPI
   # this formula cannot install; the placeholders below are what it replaces.
-  url "https://files.pythonhosted.org/packages/84/77/64ed432e907ae47f429d3011613f1507c0fd9c428c977d8350c117f24cf4/spareparts_cli-0.11.0.tar.gz"
-  sha256 "3e633b13d8d71027cd46e2ddd3f8991f836ddb6c1fa0eab52e43521a720daedb"
+  url "https://files.pythonhosted.org/packages/ea/81/a06a331afa21ea1bb93e8116a0744c600f366ccde6d43f6d9e88eb66c7c7/spareparts_cli-0.12.0.tar.gz"
+  sha256 "487ab60febbbc9c2049afb0f1db848fc69a87464a562cbd994e67beeddb4e634"
 
   # Homebrew builds Python resources from source. Keep the formula on the
   # CLI's stable base dependency set; optional LLM SDKs pull Rust-backed
